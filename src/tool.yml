@@ -1,8 +1,12 @@
 tools:
-  foobar:
-    title: Foo Bar
-    description: A dummy tool to exemplify the YAML file
-    version: 0.1
+  geocube:
+    title: Metacatalog GeoCube
+    description: |
+      This tool is designed to be used together with the V-FOR-WaTer Metacatalog data loader.
+      It uses a number of data source files along with either a metacatalog entry or JSON dumps
+      of the metadata.
+      The data is aggregated to a target precision (temporal) and spatial resolution and then
+      ingested into a geocube that is stored as a netCDF file.
     parameters:
       foo_int: 
         type: integer

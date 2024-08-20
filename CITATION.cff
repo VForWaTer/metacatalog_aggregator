@@ -2,10 +2,13 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Tool Spec Python template
+title: Metacatalog GeoCube aggregator
 message: >-
-  Please replace this citation information with appropriate
-  metadata for your tool
+  This tool is designed to be used together with the V-FOR-WaTer Metacatalog data loader.
+  It uses a number of data source files along with either a metacatalog entry or JSON dumps
+  of the metadata.
+  The data is aggregated to a target precision (temporal) and spatial resolution and then
+  ingested into a geocube that is stored as a netCDF file.
 type: software
 authors:
   - given-names: Mirko
@@ -15,14 +18,7 @@ authors:
       Institute for Water and Environment, Hydrology,
       Karlsruhe Institute for Technology (KIT)
     orcid: 'https://orcid.org/0000-0002-0424-2651'
-  - given-names: Alexander
-    family-names: Dolich
-    email: alexander.dolich@kit.edu
-    affiliation: >-
-      nstitute for Water and Environment, Hydrology,
-      Karlsruhe Institute for Technology (KIT)
-    orcid: 'https://orcid.org/0000-0003-4160-6765'
-repository-code: 'https://github.com/VForWaTer/tool_template_python'
+repository-code: 'https://github.com/hydrocode-de/metacatalog_aggregator'
 url: 'https://vforwater.github.io/tool-specs/'
 abstract: >-
   This is a Github repository template for scientific data
@@ -34,6 +30,10 @@ keywords:
   - docker
   - tool-spec
   - V-For-WaTer
+  - MetaCatalog
+  - netCDF
+  - DataCube
+  - open data cube
 license: CC-BY-4.0
-version: '0.5'
-date-released: '2024-07-30'
+version: '0.1'
+date-released: '2024-08-20'

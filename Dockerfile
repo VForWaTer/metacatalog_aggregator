@@ -1,16 +1,16 @@
 # Pull any base image that includes python3
-FROM python:3.12
+FROM python:3.12.2
 
 # install the toolbox runner tools
-RUN pip install "json2args[data]>=0.6.2"
-
-# if you do not need data-preloading as your tool does that on its own
-# you can use this instread of the line above to use a json2args version
-# with less dependencies
-# RUN pip install json2args>=0.6.2
-
-# Do anything you need to install tool dependencies here
-RUN echo "Replace this line with a tool"
+RUN pip install "json2args>=0.6.2" \
+    metacatalog==0.9.2 \    
+    ipython==8.26.0 \ 
+    pandas==2.2.2 \
+    geopandas==1.0.1 \
+    xarray[complete]==2024.7.0 \ 
+    rioxarray==0.17.0 \
+    polars-lts-cpu==1.1.0 \
+    geocube==0.6.0
 
 # create the tool input structure
 RUN mkdir /in
