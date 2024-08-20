@@ -4,11 +4,7 @@
 cff-version: 1.2.0
 title: Metacatalog GeoCube aggregator
 message: >-
-  This tool is designed to be used together with the V-FOR-WaTer Metacatalog data loader.
-  It uses a number of data source files along with either a metacatalog entry or JSON dumps
-  of the metadata.
-  The data is aggregated to a target precision (temporal) and spatial resolution and then
-  ingested into a geocube that is stored as a netCDF file.
+  Data Cude generator from contenxtualized MetaCatalog input data
 type: software
 authors:
   - given-names: Mirko
@@ -19,13 +15,13 @@ authors:
       Karlsruhe Institute for Technology (KIT)
     orcid: 'https://orcid.org/0000-0002-0424-2651'
 repository-code: 'https://github.com/hydrocode-de/metacatalog_aggregator'
-url: 'https://vforwater.github.io/tool-specs/'
 abstract: >-
-  This is a Github repository template for scientific data
-  (pre-)processing tools follwoing the tool specs
-  (https://vforwater.github.io/tool-specs/) for
-  containerized scientific tools. You can use this
-  repository as a starting point for scientific tools.
+  This tool is designed to be used together with the V-FOR-WaTer Metacatalog data loader.
+  It uses a number of data source files along with either a metacatalog entry or JSON dumps
+  of the metadata.
+  The data is aggregated to a target precision (temporal) and spatial resolution and then
+  ingested into a geocube that is stored as a netCDF file.
+
 keywords:
   - docker
   - tool-spec
@@ -34,6 +30,6 @@ keywords:
   - netCDF
   - DataCube
   - open data cube
-license: CC-BY-4.0
+license: MIT
 version: '0.1'
 date-released: '2024-08-20'
