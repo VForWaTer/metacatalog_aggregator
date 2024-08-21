@@ -1,0 +1,10 @@
+{
+    "geocube": {
+        "parameters": {
+            "integration": "spatiotemporal",
+            "precision": "7d",
+            "resolution": 5000,
+            "aggregates": ["mean", "min", "max"]
+        }
+    }    
+}
