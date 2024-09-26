@@ -4,7 +4,8 @@
             "integration": "spatiotemporal",
             "precision": "7d",
             "resolution": 5000,
-            "aggregates": ["mean", "min", "max"]
+            "aggregates": ["mean", "min", "max"],
+            "target_epsg": 25832
         }
     }    
 }

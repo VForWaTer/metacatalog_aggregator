@@ -1,0 +1,13 @@
+services:
+  geocube:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TOOL_RUN: geocube
+    command: echo "run this tool as docker compose run --rm geocube python run.py"
+    volumes:
+      - ./in:/in
+      - ./out:/out
+      - ./src:/src
+      
